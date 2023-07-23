@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dio6685jsyc4v"]
+
+[ext_resource type="PackedScene" uid="uid://c6dd1h7c5wc5w" path="res://scenes/fish/fish.tscn" id="1_ekn0l"]
+[ext_resource type="Script" path="res://scenes/fish/gambling_fish.gd" id="2_xd0dx"]
+
+[node name="GamblingFish" instance=ExtResource("1_ekn0l")]
+rotation = 0.510329
+freeze = true
+script = ExtResource("2_xd0dx")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(32, -1.5)
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+z_index = 3
+position = Vector2(208.349, 32.3508)
+rotation = 0.180146
+scale = Vector2(3, 3)
+animation = &"uncommon"
+flip_h = true
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(32, -1.5)

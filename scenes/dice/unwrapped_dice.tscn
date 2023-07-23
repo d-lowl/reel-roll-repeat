@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://2k5xicmblwpb"]
+
+[ext_resource type="Script" path="res://scenes/dice/unwrapped_dice.gd" id="1_3lonc"]
+[ext_resource type="PackedScene" uid="uid://b1kbdqw4a6rtl" path="res://scenes/dice/dice.tscn" id="2_ks1hm"]
+
+[node name="UnwrappedDice" type="Node2D"]
+script = ExtResource("1_3lonc")
+colour = "red"
+
+[node name="Face1" parent="." instance=ExtResource("2_ks1hm")]
+position = Vector2(384, 128)
+
+[node name="Face2" parent="." instance=ExtResource("2_ks1hm")]
+position = Vector2(128, 384)
+
+[node name="Face3" parent="." instance=ExtResource("2_ks1hm")]
+position = Vector2(384, 384)
+
+[node name="Face4" parent="." instance=ExtResource("2_ks1hm")]
+position = Vector2(640, 384)
+
+[node name="Face5" parent="." instance=ExtResource("2_ks1hm")]
+position = Vector2(384, 640)
+
+[node name="Face6" parent="." instance=ExtResource("2_ks1hm")]
+position = Vector2(384, 896)

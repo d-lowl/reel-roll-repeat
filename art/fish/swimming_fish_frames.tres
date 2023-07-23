@@ -1,0 +1,50 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://cg5vuglk24o3v"]
+
+[ext_resource type="Texture2D" uid="uid://8ctlbb6hb1xb" path="res://art/fish/fishTile_077.png" id="1_mqy85"]
+[ext_resource type="Texture2D" uid="uid://ck3eiy42hmijo" path="res://art/fish/fishTile_081.png" id="2_3s532"]
+[ext_resource type="Texture2D" uid="uid://yfth5cyoosxw" path="res://art/fish/fishTile_075.png" id="3_t151j"]
+[ext_resource type="Texture2D" uid="uid://c107v764dilj7" path="res://art/fish/fishTile_079.png" id="4_porfe"]
+[ext_resource type="Texture2D" uid="uid://dk3nxjy637274" path="res://art/fish/fishTile_073.png" id="5_8sak4"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mqy85")
+}],
+"loop": true,
+"name": &"common",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3s532")
+}],
+"loop": true,
+"name": &"epic",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_t151j")
+}],
+"loop": true,
+"name": &"legendary",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_porfe")
+}],
+"loop": true,
+"name": &"rare",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_8sak4")
+}],
+"loop": true,
+"name": &"uncommon",
+"speed": 5.0
+}]

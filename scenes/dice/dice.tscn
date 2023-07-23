@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1kbdqw4a6rtl"]
+
+[ext_resource type="Script" path="res://scenes/dice/dice.gd" id="1_ckjkq"]
+[ext_resource type="SpriteFrames" uid="uid://cxxuudh828fpe" path="res://scenes/dice/dice.tres" id="2_4qk2i"]
+
+[node name="Dice" type="Node2D"]
+position = Vector2(130, 129)
+script = ExtResource("1_ckjkq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_4qk2i")
+animation = &"red"
+
+[node name="RollTimer" type="Timer" parent="."]
+wait_time = 0.05
+
+[connection signal="timeout" from="RollTimer" to="." method="_on_roll_timer_timeout"]
